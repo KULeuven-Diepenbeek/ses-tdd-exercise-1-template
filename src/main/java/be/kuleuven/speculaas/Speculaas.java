@@ -13,4 +13,6 @@ public class Speculaas {
     public int getBoter() {
         return boter;
     }
+
+    // TODO Opgave 1: vul aan
 }

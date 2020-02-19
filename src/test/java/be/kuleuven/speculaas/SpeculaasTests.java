@@ -14,5 +14,5 @@ public class SpeculaasTests {
         assertThat(speculaas.getBoter(), is(0));
     }
 
-    // TODO vul aan, zie opgave in README.md!
+    // TODO Opgave 1: vul aan, zie opgave 1 in README.md!
 }
