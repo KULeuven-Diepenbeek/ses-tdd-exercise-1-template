@@ -103,3 +103,18 @@ Lees op [https://site.mockito.org](https://site.mockito.org) **hoe** je het fram
 - Hoe include ik Mockito als een dependency in mijn project?
 - Hoe gebruik ik de API om een Test Double/mock aan te maken?
 - Hoe valideer ik verwachtingen die ik heb van deze Test Double?
+
+# SES TDD Exercise 5
+
+## Opgave
+
+Gebruik Selenium IDE om een test scenario op te nemen van de SESsy applicatie. Start deze eerst lokaal, en vertrek vanuit het localhost base address [http://localhost:8080/#/](http://localhost:8080/#/). Hanteer de volgende scenario's:
+
+1. Als anoniempje, zoek op 'art', klik op detail, klik op uitlenen. Verifieer dat er een waarschuwingsboodschap verschijnt dat je niet kan uitlenen.
+2. Als slechte uitlener, zoek op 'art', klik op detail, klik op uitlenen. Verifieer dat er een boodschap verschijnt dat het gelukt is, en dat de knop veranderde naar 'Terugbrengen?'. Klik op terugbrengen. Verifieer dat er een boodschap verschijnt dat het gelukt is. 
+3. Als anoniempje, log in (een van beide rollen). Verifieer dat login naar logout verandert. Logout. Verifieer dat logout naar login verandert. 
+
+**Bewaar dit scenario, opgenomen met de Selenium IDE, in bestand _opgave5.html_** in de root van deze repository. 
+
+Je zal voor deze opgave dus de lokale [SESsy applicatie](/teaching/ses/sessy) moeten starten, en de Selenium (Google Chrome) plugin moeten installeren. 
+
