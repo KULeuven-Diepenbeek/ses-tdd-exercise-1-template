@@ -1,6 +1,6 @@
 # SES TDD Exercise 1
 
-Oefening voor https://brainbaking.com/teaching/ses/
+Oefening voor https://github.com/KULeuven-Diepenbeek/ses-tdd-exercise-1-template
 
 ## Technologie
 
