@@ -1,0 +1,4 @@
+be/kuleuven/speculaas/opgave4/VerkoopsterIntegrationTest.java
+ be.kuleuven.speculaas.opgave4.VerkoopsterIntegrationTest
+be/kuleuven/speculaas/SpeculaasTests.java
+ be.kuleuven.speculaas.SpeculaasTests

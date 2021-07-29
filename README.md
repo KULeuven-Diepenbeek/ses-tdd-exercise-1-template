@@ -6,6 +6,8 @@ Oefening voor https://github.com/KULeuven-Diepenbeek/ses-tdd-exercise-1-template
 
 Test harnas met JUnit 5. [JUnit documentatie](https://junit.org/junit5/docs/current/user-guide/).
 
+**LET OP**, JUnit 4 gebruiken we niet meer, en v5 heeft een andere API!
+
 ## Opgave
 
 De Artisanale Bakkers Associatie vertrouwt op uw technische bekwaamheid om hun probleem op te lossen. 
@@ -18,6 +20,8 @@ De methode, in de klasse `Speculaas`, zou er zo uit moeten zien:
 		// TODO ...
 	}
 ```
+
+Of `fun beoordeel(): int {}` in Kotlin.
 
 De functie geeft een nummer terug - hoe hoger dit nummer, hoe beter de beoordeling en 
 hoe gelukkiger de bakker. Een speculaas kan de volgende ingrediënten bevatten: 

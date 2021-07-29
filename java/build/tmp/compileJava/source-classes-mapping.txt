@@ -1,0 +1,8 @@
+be/kuleuven/speculaas/opgave4/Verkoopster.java
+ be.kuleuven.speculaas.opgave4.Verkoopster
+be/kuleuven/speculaas/opgave4/SpeculaasFabriek.java
+ be.kuleuven.speculaas.opgave4.SpeculaasFabriek
+be/kuleuven/speculaas/Speculaas.java
+ be.kuleuven.speculaas.Speculaas
+be/kuleuven/speculaas/opgave4/GoedeSpeculaasFabriek.java
+ be.kuleuven.speculaas.opgave4.GoedeSpeculaasFabriek
