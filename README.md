@@ -21,8 +21,6 @@ De methode, in de klasse `Speculaas`, zou er zo uit moeten zien:
 	}
 ```
 
-Of `fun beoordeel(): int {}` in Kotlin.
-
 De functie geeft een nummer terug - hoe hoger dit nummer, hoe beter de beoordeling en 
 hoe gelukkiger de bakker. Een speculaas kan de volgende ingrediënten bevatten: 
 kruiden, boter, suiker, eieren, melk, honing, bloem, zout. 
@@ -51,10 +49,8 @@ Kijk naar een voorbeeld test hoe de methodes te hanteren.
 Er zijn al enkele testen voorzien. Die kan je uitvoeren met IntelliJ door op het groen pijltje te drukken, of met Gralde:
 
 ```
-./gradlew.bat test
+./gradlew test
 ```
-
-(Op Unix: `./gradlew test`)
 
 Dit genereert een **test rapport** HTML bestand in de `build/test` map.
 
@@ -63,7 +59,7 @@ Dit genereert een **test rapport** HTML bestand in de `build/test` map.
 Denk aan de volgende zaken:
 
 - Hoe zit het met een industriële speculaas, zonder kruiden of boter? 
-- Wat doet de funcite beoordeel als het argument `null` is?
+- Wat doet de functie beoordeel als het argument `null` is?
 - Wat als een speculaas wordt meegegeven zonder ingrediënten?
 
 We zijn dus geïnteresseerd in **edge cases**. Probeer alle mogelijkheden te controleren. 
@@ -77,7 +73,7 @@ Deze oefening legt de nadruk op de testen, niet de implementatie.
 Dit is een vervolgopgave van de code van **Opgave 1**. Werk verder op dat bestaand project.
 
 Een verkoopster werkt in een (goede) speculaasfabriek. De verkoopster wilt graag 2 EUR aanrekenen per speculaas die de fabriek produceert. 
-Echter, als de klant meer dan 5 stuks verkoopt, mag er een korting van 10% worden aangerekend. 
+Echter, als de klant meer dan 5 stuks verkoopt, mag er een korting van 10% worden aangerekend. In dit voorbeeld gaan we ervan uit dat een fabriek een willekeurig aantal speculaas per dag maakt en dat de klant steeds alle speculazen koopt. De verkoop gebeurt in de Verkoopsterklasse en het bakken van de speculazen gebeurt in de SpeculaasFabriek. Als we nu willen testen of onze `verkoop` methode uit de `Verkoopster`-klasse werkt, dan willen we dit **isolated** doen. We willen dus de onzekerheid van de Fabriek weghalen door specifieke gevallen aan te halen. Dit kan echter niet via de standaard `SpeculaasFabriek`. Daarom gaan we een **test double** gebruiken. Hiervoor gaan we deze keer een **mock** gebruiken zoals verder duidelijk wordt.
 
 ```java
 	public double verkoop() {
@@ -107,18 +103,3 @@ Lees op [https://site.mockito.org](https://site.mockito.org) **hoe** je het fram
 - Hoe include ik Mockito als een dependency in mijn project?
 - Hoe gebruik ik de API om een Test Double/mock aan te maken?
 - Hoe valideer ik verwachtingen die ik heb van deze Test Double?
-
-# SES TDD Exercise 5
-
-## Opgave
-
-Gebruik Selenium IDE om een test scenario op te nemen van de SESsy applicatie. Start deze eerst lokaal, en vertrek vanuit het localhost base address [http://localhost:8080/#/](http://localhost:8080/#/). Hanteer de volgende scenario's:
-
-1. Als anoniempje, zoek op 'art', klik op detail, klik op uitlenen. Verifieer dat er een waarschuwingsboodschap verschijnt dat je niet kan uitlenen.
-2. Als slechte uitlener, zoek op 'art', klik op detail, klik op uitlenen. Verifieer dat er een boodschap verschijnt dat het gelukt is, en dat de knop veranderde naar 'Terugbrengen?'. Klik op terugbrengen. Verifieer dat er een boodschap verschijnt dat het gelukt is. 
-3. Als anoniempje, log in (een van beide rollen). Verifieer dat login naar logout verandert. Logout. Verifieer dat logout naar login verandert. 
-
-**Bewaar dit scenario, opgenomen met de Selenium IDE, in bestand _opgave5.html_** in de root van deze repository. 
-
-Je zal voor deze opgave dus de lokale [SESsy applicatie](/teaching/ses/sessy) moeten starten, en de Selenium (Google Chrome) plugin moeten installeren. 
-

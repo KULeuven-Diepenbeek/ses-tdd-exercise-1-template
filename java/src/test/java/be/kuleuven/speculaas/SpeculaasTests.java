@@ -2,8 +2,7 @@ package be.kuleuven.speculaas;
 
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 public class SpeculaasTests {
 
@@ -11,7 +10,7 @@ public class SpeculaasTests {
     public void maakNieuweSpeculaasAan_standaardZonderBoter() {
         var speculaas = new Speculaas();
 
-        assertThat(speculaas.getBoter(), is(0));
+        assertThat(speculaas.getBoter()).isEqualTo(0);
     }
 
     // TODO Opgave 1: vul aan, zie opgave 1 in README.md!

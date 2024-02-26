@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.kuleuven.speculaas.SpeculaasTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-29T11:29:58" hostname="Wouters-M1-Air.local" time="0.01">
+<testsuite name="be.kuleuven.speculaas.SpeculaasTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-26T07:44:27" hostname="LT3210121" time="0.13">
   <properties/>
-  <testcase name="maakNieuweSpeculaasAan_standaardZonderBoter()" classname="be.kuleuven.speculaas.SpeculaasTests" time="0.01"/>
+  <testcase name="maakNieuweSpeculaasAan_standaardZonderBoter()" classname="be.kuleuven.speculaas.SpeculaasTests" time="0.13"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
